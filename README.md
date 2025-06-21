@@ -19,7 +19,7 @@
 
 | Module              | Technology                         |
 |---------------------|-------------------------------------|
-| Frontend            | Android (Java + Jetpack Compose)    |
+| Frontend            | Android (Java)    |
 | Backend             | Firebase (Authentication + Firestore) |
 | AI Recognition      | TensorFlow Lite (on-device model)   |
 | Augmented Reality   | ARCore + 3D Models (.glb format)    |
