@@ -47,4 +47,8 @@ dependencies {
 
     // Guava
     implementation(libs.guava)
+
+    // TensorFlow Lite - temporarily commented out
+    // implementation(libs.tensorflow.lite)
+    // implementation(libs.tensorflow.lite.support)
 }
