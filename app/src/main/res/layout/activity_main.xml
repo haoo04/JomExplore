@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  This XML layout file defines the user interface for the main activity of the JomExplore application.
+  It uses a vertical LinearLayout to arrange several buttons that provide access to the app's main features.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +12,7 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <!-- App Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +21,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="32dp"/>
 
+    <!-- Button to launch the AI photo recognition feature -->
     <Button
         android:id="@+id/btn_ai_scan"
         android:layout_width="match_parent"
@@ -23,6 +29,7 @@
         android:layout_marginBottom="16dp"
         android:text="AI photo recognition" />
 
+    <!-- Button to view user achievements -->
     <Button
         android:id="@+id/btn_achievements"
         android:layout_width="match_parent"
@@ -30,6 +37,7 @@
         android:layout_marginBottom="16dp"
         android:text="Achievement" />
 
+    <!-- Button to view the leaderboard -->
     <Button
         android:id="@+id/btn_leaderboard"
         android:layout_width="match_parent"
@@ -37,6 +45,7 @@
         android:layout_marginBottom="16dp"
         android:text="Ranking" />
 
+    <!-- Button for point redemption -->
     <Button
         android:id="@+id/btn_rewards"
         android:layout_width="match_parent"
@@ -44,6 +53,7 @@
         android:layout_marginBottom="16dp"
         android:text="Point Redemption" />
 
+    <!-- Button to open the map view -->
     <Button
         android:id="@+id/btn_map"
         android:layout_width="match_parent"

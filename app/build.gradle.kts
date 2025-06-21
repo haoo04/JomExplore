@@ -26,8 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 }
 
@@ -48,7 +48,18 @@ dependencies {
     // Guava
     implementation(libs.guava)
 
-    // TensorFlow Lite - temporarily commented out
-    // implementation(libs.tensorflow.lite)
-    // implementation(libs.tensorflow.lite.support)
+    // TensorFlow Lite
+    implementation("org.tensorflow:tensorflow-lite:2.13.0")
+    implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
+
+    // For reading EXIF data from images
+    implementation("androidx.exifinterface:exifinterface:1.3.7")
+
+    // ARCore (Google Play Services for AR) - for future AR implementation
+    implementation("com.google.ar:core:1.49.0")
+
+    // Filament for 3D model rendering
+    implementation("com.google.android.filament:filament-android:1.31.5")
+    implementation("com.google.android.filament:gltfio-android:1.31.5")
+    implementation("com.google.android.filament:filament-utils-android:1.31.5")
 }

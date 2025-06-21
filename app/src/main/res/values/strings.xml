@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">JomExplore</string>
+    <string name="captured_image_preview">Captured image preview</string>
+    <string name="view_in_ar">View in AR</string>
 </resources>

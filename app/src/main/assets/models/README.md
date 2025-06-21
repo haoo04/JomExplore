@@ -10,13 +10,13 @@ The model should be trained to recognize Malaysian heritage sites and landmarks.
 - Format: TensorFlow Lite (.tflite)
 
 ## Expected Heritage Sites:
-1. 马六甲红屋 (Malacca Red House)
-2. 双峰塔 (Petronas Twin Towers)
-3. 吉隆坡塔 (KL Tower)
-4. 独立广场 (Merdeka Square)
-5. 国家清真寺 (National Mosque)
-6. 巴图洞 (Batu Caves)
-7. 云顶高原 (Genting Highlands)
-8. 槟城乔治市 (George Town)
-9. 兰卡威 (Langkawi)
-10. 沙巴神山 (Mount Kinabalu) 
+1. Malacca Red House
+2. Petronas Twin Towers
+3. KL Tower
+4. Merdeka Square
+5. ational Mosque
+6. Batu Caves
+7. Genting Highlands
+8. George Town
+9. Langkawi
+10. Mount Kinabalu)

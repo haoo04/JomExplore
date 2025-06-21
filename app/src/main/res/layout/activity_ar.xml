@@ -1,0 +1,82 @@
+<!--
+    This XML layout file defines the user interface for the AR (Augmented Reality) activity.
+    It contains the GLSurfaceView for AR rendering and overlay UI elements for user interaction.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ARActivity">
+
+    <!-- GLSurfaceView for AR rendering -->
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top status overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/ar_status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AR Feature"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#80000000"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+            
+    </LinearLayout>
+
+    <!-- Bottom controls overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:padding="16dp">
+
+        <!-- Instructions text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Look around to detect surfaces, then tap to place the AR model"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="#80000000"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Back to Results"
+            android:background="@drawable/rounded_background"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:minWidth="200dp" />
+            
+    </LinearLayout>
+
+    <!-- Loading indicator (initially hidden) -->
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout> 

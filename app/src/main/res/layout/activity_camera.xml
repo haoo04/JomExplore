@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    This XML layout defines the user interface for the camera screen.
+    It includes a PreviewView to display the camera feed and a capture button.
+-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CameraActivity">
 
+    <!-- The PreviewView is used by CameraX to display the live camera feed. -->
     <androidx.camera.view.PreviewView
         android:id="@+id/preview_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <!-- A button to capture an image. It is positioned at the bottom center of the screen. -->
     <Button
         android:id="@+id/btn_capture"
         android:layout_width="wrap_content"

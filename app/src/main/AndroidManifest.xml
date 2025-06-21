@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <!-- For Android 10+ scoped storage -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +23,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JomExplore"
         tools:targetApi="31">
+
+        <!-- "AR Required" app, requires Google Play Services for AR to be installed. -->
+        <meta-data android:name="com.google.ar.core" android:value="required" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,6 +38,12 @@
         </activity>
         <activity android:name=".CameraActivity" />
         <activity android:name=".RecognitionResultActivity" />
+        <activity
+            android:name=".ARActivity"
+            android:label="AR View"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="locked" />
     </application>
 
 </manifest>
