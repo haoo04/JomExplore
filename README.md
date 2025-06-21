@@ -4,14 +4,12 @@
 
 ## 🏆 Core Features (MVP)
 
-### 📸 AI Photo Recognition + AR Model Display (Function 1)
+### 📸 AI Photo Recognition (Function 1)
 - Uses **TensorFlow Lite** to recognize heritage sites on-device through the camera.
-- Upon recognition, loads the corresponding **3D model** and displays it in real-world space using **ARCore**.
 
-### 🗺️ Region-Based Achievement Unlocking (Function 2)
-- Users unlock digital achievements by physically visiting heritage sites.
-- **Firebase Authentication** handles user management.
-- **Firebase Firestore** stores user progress and achievements.
+
+### 🗺️ AR Model Display (Function 2)
+- Upon recognition, loads the corresponding **3D model** and displays it in real-world space using **ARCore**.
 
 ---
 
@@ -31,6 +29,7 @@
 - ✅ **Friend Leaderboard**: Compare exploration achievements with friends.
 - ✅ **Point Redemption System**: Earn points by visiting sites, redeem for tourism coupons.
 - ✅ **Map API Integration**: Navigate and discover nearby heritage attractions.
+- ✅ **Ticket purchasing with NFT collectibles**
 
 ---
 
