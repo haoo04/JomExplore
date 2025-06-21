@@ -1,6 +1,6 @@
 # JomExplore
 
-🎯 **JomExplore** is an Android application that leverages artificial intelligence and augmented reality to preserve Malaysia’s cultural heritage and promote sustainable tourism. It was developed as an MVP (Minimum Viable Product) within 48 hours for the **Digital Heritage and Tourism Hackathon**.
+🎯 **JomExplore** is an Android application that leverages artificial intelligence and augmented reality to preserve Malaysia’s cultural heritage and promote sustainable tourism. 
 
 ## 🏆 Core Features (MVP)
 
