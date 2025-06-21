@@ -83,6 +83,7 @@ public class ARActivity extends AppCompatActivity {
                 arRenderer = new ARRenderer(this, modelName);
                 glSurfaceView.setRenderer(arRenderer);
                 glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
+                glSurfaceView.setWillNotDraw(false);
                 Log.d(TAG, "ARRenderer initialized and set to GLSurfaceView");
             } catch (Exception e) {
                 Log.e(TAG, "Failed to initialize ARRenderer", e);
@@ -301,15 +302,6 @@ public class ARActivity extends AppCompatActivity {
                     Log.d(TAG, "GLSurfaceView: " + (glSurfaceView != null ? "OK" : "NULL"));
                     Log.d(TAG, "ARRenderer: " + (arRenderer != null ? "OK" : "NULL"));
                     Log.d(TAG, "=======================");
-                    
-                    // Update status in UI
-                    runOnUiThread(() -> {
-                        if (arStatusText != null) {
-                            String debugInfo = "AR View: " + getModelDisplayName() + 
-                                             "\nTap to place model\nDebugging: Model=" + modelName;
-                            arStatusText.setText(debugInfo);
-                        }
-                    });
                 }
                 
                 // Schedule next debug check in 5 seconds
