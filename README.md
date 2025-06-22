@@ -1,19 +1,19 @@
 # JomExplore
 
-🎯 **JomExplore** is an Android application that leverages artificial intelligence and augmented reality to preserve Malaysia’s cultural heritage and promote sustainable tourism. 
+ **JomExplore** is an Android application that leverages artificial intelligence and augmented reality to preserve Malaysia’s cultural heritage and promote sustainable tourism. 
 
-## 🏆 Core Features (MVP)
+##  Core Features (MVP)
 
-### 📸 AI Photo Recognition (Function 1)
+###  AI Photo Recognition (Function 1)
 - Uses **TensorFlow Lite** to recognize heritage sites on-device through the camera.
 
 
-### 🗺️ AR Model Display (Function 2)
+###  AR Model Display (Function 2)
 - Upon recognition, loads the corresponding **3D model** and displays it in real-world space using **ARCore**.
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 | Module              | Technology                         |
 |---------------------|-------------------------------------|
@@ -24,12 +24,12 @@
 
 ---
 
-## 📍 Planned Features (Post-Hackathon)
+##  Planned Features (Post-Hackathon)
 
-- ✅ **Friend Leaderboard**: Compare exploration achievements with friends.
-- ✅ **Point Redemption System**: Earn points by visiting sites, redeem for tourism coupons.
-- ✅ **Map API Integration**: Navigate and discover nearby heritage attractions.
-- ✅ **Ticket purchasing with NFT collectibles**
+-  **Friend Leaderboard**: Compare exploration achievements with friends.
+-  **Point Redemption System**: Earn points by visiting sites, redeem for tourism coupons.
+-  **Map API Integration**: Navigate and discover nearby heritage attractions.
+-  **Ticket purchasing with NFT collectibles**
 
 ---
 
