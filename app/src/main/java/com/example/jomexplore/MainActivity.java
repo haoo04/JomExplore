@@ -26,9 +26,15 @@ public class MainActivity extends AppCompatActivity {
 
             // Find the AI Scan button and set a click listener.
             Button btnAiScan = findViewById(R.id.btn_ai_scan);
-            
-            if (btnAiScan == null) {
-                Log.e(TAG, "AI Scan button not found in layout");
+            Button btnSignIn = findViewById(R.id.btn_sign_in);
+            Button btnTicketStore = findViewById(R.id.btn_ticket_store);
+            Button btnAchievements = findViewById(R.id.btn_achievements);
+            Button btnLeaderboard = findViewById(R.id.btn_leaderboard);
+            Button btnRewards = findViewById(R.id.btn_rewards);
+            Button btnMap = findViewById(R.id.btn_map);
+
+            if (btnAiScan == null || btnSignIn == null || btnTicketStore == null || btnAchievements == null || btnLeaderboard == null || btnRewards == null || btnMap == null) {
+                Log.e(TAG, "A button was not found in the layout");
                 Toast.makeText(this, "UI initialization error", Toast.LENGTH_LONG).show();
                 return;
             }
@@ -44,6 +50,36 @@ public class MainActivity extends AppCompatActivity {
                     Log.e(TAG, "Error starting CameraActivity", e);
                     Toast.makeText(MainActivity.this, "Error starting camera: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
+            });
+            
+            // Sign In button click listener
+            btnSignIn.setOnClickListener(v -> {
+                Toast.makeText(MainActivity.this, "Sign In feature coming soon!", Toast.LENGTH_SHORT).show();
+            });
+
+            // Ticket Store button click listener
+            btnTicketStore.setOnClickListener(v -> {
+                Toast.makeText(MainActivity.this, "Ticket Store feature coming soon!", Toast.LENGTH_SHORT).show();
+            });
+
+            // Achievements button click listener
+            btnAchievements.setOnClickListener(v -> {
+                Toast.makeText(MainActivity.this, "Achievements feature coming soon!", Toast.LENGTH_SHORT).show();
+            });
+
+            // Leaderboard button click listener
+            btnLeaderboard.setOnClickListener(v -> {
+                Toast.makeText(MainActivity.this, "Leaderboard feature coming soon!", Toast.LENGTH_SHORT).show();
+            });
+
+            // Rewards button click listener
+            btnRewards.setOnClickListener(v -> {
+                Toast.makeText(MainActivity.this, "Rewards feature coming soon!", Toast.LENGTH_SHORT).show();
+            });
+
+            // Map button click listener
+            btnMap.setOnClickListener(v -> {
+                Toast.makeText(MainActivity.this, "Map feature coming soon!", Toast.LENGTH_SHORT).show();
             });
             
             Log.d(TAG, "MainActivity initialized successfully");

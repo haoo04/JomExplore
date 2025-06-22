@@ -3,61 +3,83 @@
   This XML layout file defines the user interface for the main activity of the JomExplore application.
   It uses a vertical LinearLayout to arrange several buttons that provide access to the app's main features.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <!-- App Title -->
-    <TextView
+    <Button
+        android:id="@+id/btn_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="JomExplore"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Sign In" />
 
-    <!-- Button to launch the AI photo recognition feature -->
-    <Button
-        android:id="@+id/btn_ai_scan"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="AI photo recognition" />
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <!-- Button to view user achievements -->
-    <Button
-        android:id="@+id/btn_achievements"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Achievement" />
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="JomExplore"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
-    <!-- Button to view the leaderboard -->
-    <Button
-        android:id="@+id/btn_leaderboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Ranking" />
+        <!-- Button to launch the AI photo recognition feature -->
+        <Button
+            android:id="@+id/btn_ai_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="AI photo recognition" />
 
-    <!-- Button for point redemption -->
-    <Button
-        android:id="@+id/btn_rewards"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Point Redemption" />
+        <!-- Button to view user achievements -->
+        <Button
+            android:id="@+id/btn_achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Achievement" />
 
-    <!-- Button to open the map view -->
-    <Button
-        android:id="@+id/btn_map"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Map" />
+        <!-- Button to view the leaderboard -->
+        <Button
+            android:id="@+id/btn_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Ranking" />
 
-</LinearLayout> 
+        <!-- Button for point redemption -->
+        <Button
+            android:id="@+id/btn_rewards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Point Redemption" />
+
+        <!-- Button for Ticket Store -->
+        <Button
+            android:id="@+id/btn_ticket_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Ticket Store" />
+
+        <!-- Button to open the map view -->
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map" />
+    </LinearLayout>
+
+</RelativeLayout> 
